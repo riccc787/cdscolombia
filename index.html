@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Interactiva: El Poder del Oxígeno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <style>
+        /* Estilos de la estética de infografía a mano / boceto monocromático */
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            /* Fondo tipo cuaderno de puntos en negro tenue */
+            background-image: radial-gradient(rgba(0, 0, 0, 0.15) 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+            overflow-x: hidden;
+        }
+
+        .font-hand {
+            font-family: 'Gochi Hand', cursive;
+        }
+
+        /* Cajas con bordes irregulares dibujados a mano en tinta negra */
+        .sketch-box {
+            background: #ffffff;
+            border: 3px solid #000000;
+            border-radius: 2% 95% 3% 95% / 95% 4% 92% 5%;
+            box-shadow: 6px 6px 0px #000000;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .sketch-box:hover {
+            border-radius: 95% 4% 92% 5% / 2% 95% 3% 95%;
+            transform: translateY(-4px);
+            box-shadow: 8px 8px 0px #000000;
+        }
+
+        /* Efecto de resaltado tipo marcador negro */
+        .highlight-marker {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 0.1rem 0.4rem;
+            display: inline-block;
+            transform: rotate(-1deg);
+            border-radius: 2px;
+            font-weight: bold;
+        }
+
+        .highlight-marker-alt {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 0.1rem 0.4rem;
+            display: inline-block;
+            transform: rotate(1deg);
+            border-radius: 2px;
+            font-weight: bold;
+        }
+
+        /* Animaciones de entrada progresiva */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen pb-20 text-black">
+
+    <!-- Navegación simple / Banner -->
+    <nav class="p-6 text-center fade-in-up">
+        <img src="banner.png" onerror="this.onerror=null; this.src='https://placehold.co/1200x400/000000/ffffff?text=Banner+Andreas+Kalcker+AQUI'" alt="Banner Andreas Kalcker - El CDS es el descubrimiento más grande" class="mx-auto w-full max-w-5xl sketch-box object-cover">
+    </nav>
+
+    <!-- Sección Hero -->
+    <header class="max-w-4xl mx-auto px-6 pt-10 pb-16 text-center fade-in-up">
+        <div class="inline-block sketch-box px-8 py-4 mb-6 transform -rotate-1">
+            <h1 class="font-hand text-5xl md:text-6xl font-bold">
+                Guía Práctica del <span class="underline decoration-4 underline-offset-4">CDS Oxígeno Celular</span>
+            </h1>
+        </div>
+        <p class="text-xl md:text-2xl mt-6 font-semibold max-w-2xl mx-auto leading-relaxed">
+            Antes de aprovechar estos beneficios, es fundamental que conozcas las bases. Queremos asegurarnos de que tengas la mejor experiencia posible, aprendiendo paso a paso de forma segura y consciente.
+        </p>
+    </header>
+
+    <!-- Modulo 1: ¿Qué es? -->
+    <section class="max-w-4xl mx-auto px-6 mb-20 fade-in-up">
+        <div class="sketch-box p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/3 text-center">
+                <i class="ph ph-flask text-7xl text-black mb-4"></i>
+                <h2 class="font-hand text-4xl font-bold">¿Qué es exactamente?</h2>
+            </div>
+            <div class="md:w-2/3">
+                <p class="text-lg mb-4 font-semibold">
+                    Visualízalo como un <span class="highlight-marker">transporte de alta eficiencia</span> que lleva oxígeno adicional a todo tu cuerpo. 
+                </p>
+                <p class="text-lg mb-4 font-semibold">
+                    A nivel científico, se trata de un gas disuelto en agua, compuesto por dos átomos de oxígeno y uno de cloro. A diferencia de las mezclas del pasado que terminaban de reaccionar dentro del estómago, esta es una <span class="highlight-marker-alt">solución pura y completamente terminada</span>.
+                </p>
+                <ul class="font-hand text-2xl mt-4 space-y-2 font-bold">
+                    <li><i class="ph ph-drop mr-2"></i> Altamente soluble en agua</li>
+                    <li><i class="ph ph-thermometer mr-2"></i> Se evapora fácilmente a los 11°C</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modulo 2: El Limpiador -->
+    <section class="max-w-5xl mx-auto px-6 mb-20">
+        <div class="text-center mb-12 fade-in-up">
+            <h2 class="font-hand text-5xl font-bold inline-block highlight-marker px-6 py-2 transform rotate-1">El Limpiador Inteligente</h2>
+            <p class="text-xl mt-4 font-bold">Así es como trabaja dentro de tu organismo:</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Tarjeta 1 -->
+            <div class="sketch-box p-6 fade-in-up">
+                <i class="ph ph-shield-check text-4xl mb-3"></i>
+                <h3 class="font-hand text-2xl font-bold mb-2">Frena Intrusos</h3>
+                <p class="font-semibold">Inactiva patógenos como bacterias, virus, hongos y parásitos al bloquear las proteínas que requieren para multiplicarse.</p>
+            </div>
+            
+            <!-- Tarjeta 2 -->
+            <div class="sketch-box p-6 fade-in-up" style="transition-delay: 100ms;">
+                <i class="ph ph-broom text-4xl mb-3"></i>
+                <h3 class="font-hand text-2xl font-bold mb-2">Limpieza Profunda</h3>
+                <p class="font-semibold">Ayuda a tu cuerpo a expulsar de forma natural toxinas y metales pesados acumulados mediante un proceso de oxidación.</p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="sketch-box p-6 fade-in-up" style="transition-delay: 200ms;">
+                <i class="ph ph-target text-4xl mb-3"></i>
+                <h3 class="font-hand text-2xl font-bold mb-2">Acción Selectiva</h3>
+                <p class="font-semibold">Posee un voltaje suave de 0.95v. Las células sanas lo resisten sin problema, pero las células enfermas o acidificadas que sucumben a 1.30v son neutralizadas. Sin residuos tóxicos.</p>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="sketch-box p-6 fade-in-up">
+                <i class="ph ph-lightning text-4xl mb-3"></i>
+                <h3 class="font-hand text-2xl font-bold mb-2">Motor Celular</h3>
+                <p class="font-semibold">Despierta a las mitocondrias, el motor de tus células, mejorando la comunicación interna para que el cuerpo active su propia autorreparación.</p>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="sketch-box p-6 fade-in-up" style="transition-delay: 100ms;">
+                <i class="ph ph-ambulance text-4xl mb-3"></i>
+                <h3 class="font-hand text-2xl font-bold mb-2">Emergencias</h3>
+                <p class="font-semibold">En las dosis adecuadas, tiene la capacidad de neutralizar toxinas de gran severidad, incluyendo ciertos venenos de origen animal.</p>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="sketch-box p-6 fade-in-up" style="transition-delay: 200ms;">
+                <i class="ph ph-dna text-4xl mb-3"></i>
+                <h3 class="font-hand text-2xl font-bold mb-2">Apoyo Vital</h3>
+                <p class="font-semibold">Muestra eficacia como apoyo fundamental para combatir alteraciones celulares graves y profundas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modulo 3: Toxicidad y Respaldo -->
+    <section class="max-w-4xl mx-auto px-6 mb-20 fade-in-up">
+        <div class="sketch-box p-8 md:p-12 relative overflow-hidden transform rotate-1">
+            <!-- Patrón decorativo de fondo en negro -->
+            <div class="absolute inset-0 opacity-5" style="background-image: repeating-linear-gradient(45deg, #000 0, #000 2px, transparent 2px, transparent 8px);"></div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h2 class="font-hand text-5xl font-bold mb-4">Hablemos de cantidades...</h2>
+                    <p class="text-lg mb-4 font-semibold">¿Es tóxico? La respuesta directa es no. Prácticamente todo en la naturaleza es dañino en exceso, incluso el agua potable.</p>
+                    <p class="text-lg bg-black text-white p-4 font-bold transform -rotate-1">
+                        Los análisis toxicológicos europeos indican que para alcanzar un nivel de peligro en un adulto, se tendrían que ingerir 10 litros puros y concentrados en un solo día. Algo físicamente imposible.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="font-hand text-3xl font-bold mb-4 border-b-4 border-black pb-2 inline-block">Sólido Respaldo</h3>
+                    <p class="text-lg mb-4 font-semibold">Esta solución no es una moda reciente. Posee un extenso historial de desarrollo e investigación.</p>
+                    <ul class="space-y-3 font-bold text-lg">
+                        <li class="flex items-center"><i class="ph ph-check-circle mr-2 text-2xl"></i> Décadas de investigación</li>
+                        <li class="flex items-center"><i class="ph ph-check-circle mr-2 text-2xl"></i> Múltiples patentes registradas</li>
+                        <li class="flex items-center"><i class="ph ph-check-circle mr-2 text-2xl"></i> Amplio sustento clínico documentado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modulo 4: Para quién es -->
+    <section class="max-w-4xl mx-auto px-6 mb-20">
+        <h2 class="font-hand text-5xl font-bold text-center mb-10 fade-in-up">¿Para quién es adecuado?</h2>
+        
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Columna SI -->
+            <div class="flex-1 sketch-box p-8 fade-in-up">
+                <h3 class="font-hand text-4xl border-b-4 border-black pb-2 mb-6 flex items-center font-bold">
+                    <i class="ph ph-check-fat mr-3"></i> Amplia Versatilidad
+                </h3>
+                <ul class="space-y-4 text-lg font-bold">
+                    <li class="flex items-center"><span class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3 font-hand text-xl">1</span> Niños y adultos de toda edad</li>
+                    <li class="flex items-center"><span class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3 font-hand text-xl">2</span> Mujeres embarazadas o en lactancia</li>
+                    <li class="flex items-center"><span class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3 font-hand text-xl">3</span> Mascotas herbívoros y carnívoros</li>
+                    <li class="flex items-center"><span class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3 font-hand text-xl">4</span> Uso agrícola, plantas y suelos</li>
+                </ul>
+            </div>
+
+            <!-- Columna NO -->
+            <div class="flex-1 sketch-box p-8 fade-in-up" style="transition-delay: 200ms;">
+                <h3 class="font-hand text-4xl border-b-4 border-black pb-2 mb-6 flex items-center font-bold">
+                    <i class="ph ph-x mr-3"></i> Excepciones
+                </h3>
+                <ul class="space-y-4 text-lg font-bold">
+                    <li class="flex items-start">
+                        <i class="ph ph-warning-circle text-2xl mr-3 mt-1"></i>
+                        <span>Personas diagnosticadas con <strong>Favismo</strong>, una deficiencia genética particular.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="ph ph-warning-circle text-2xl mr-3 mt-1"></i>
+                        <span>Personas con alergias previamente comprobadas a los compuestos clorados.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="ph ph-fish text-2xl mr-3 mt-1"></i>
+                        <span>No se recomienda su uso en peceras ni directamente para peces.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modulo 5: Reglas de Oro -->
+    <section class="max-w-4xl mx-auto px-6 mb-20">
+        <h2 class="font-hand text-5xl font-bold text-center mb-4 fade-in-up">Las 5 Reglas de Oro</h2>
+        <p class="text-center font-bold text-xl mb-12 fade-in-up">Principios inquebrantables para un uso seguro y efectivo.</p>
+
+        <div class="space-y-4">
+            <!-- Regla 1 -->
+            <div class="sketch-box p-6 cursor-pointer hover:bg-black hover:text-white fade-in-up group" onclick="toggleDetails('rule1')">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-hand text-2xl font-bold flex items-center">
+                        <span class="text-3xl mr-3">1.</span> Identidad Clara
+                    </h3>
+                    <i class="ph ph-caret-down text-2xl group-hover:text-white" id="icon-rule1"></i>
+                </div>
+                <div id="rule1" class="hidden mt-4 border-t-2 border-current pt-4 font-semibold">
+                    Nunca debe confundirse con la lejía comercial. Son sustancias químicas totalmente distintas, el producto activo frente al hipoclorito de sodio.
+                </div>
+            </div>
+
+            <!-- Regla 2 -->
+            <div class="sketch-box p-6 cursor-pointer hover:bg-black hover:text-white fade-in-up group" onclick="toggleDetails('rule2')">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-hand text-2xl font-bold flex items-center">
+                        <span class="text-3xl mr-3">2.</span> El Agua es tu Aliada
+                    </h3>
+                    <i class="ph ph-caret-down text-2xl group-hover:text-white" id="icon-rule2"></i>
+                </div>
+                <div id="rule2" class="hidden mt-4 border-t-2 border-current pt-4 font-semibold">
+                    Jamás se debe ingerir en su estado puro. Para su consumo oral, debe ser diluido en agua sin ninguna excepción.
+                </div>
+            </div>
+
+            <!-- Regla 3 -->
+            <div class="sketch-box p-6 cursor-pointer hover:bg-black hover:text-white fade-in-up group" onclick="toggleDetails('rule3')">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-hand text-2xl font-bold flex items-center">
+                        <span class="text-3xl mr-3">3.</span> Cuidado al Respirar
+                    </h3>
+                    <i class="ph ph-caret-down text-2xl group-hover:text-white" id="icon-rule3"></i>
+                </div>
+                <div id="rule3" class="hidden mt-4 border-t-2 border-current pt-4 font-semibold">
+                    Evita inhalar profundamente los gases que emanan directamente de la botella pura, ya que grandes cantidades pueden causar irritación.
+                </div>
+            </div>
+
+            <!-- Regla 4 -->
+            <div class="sketch-box p-6 cursor-pointer hover:bg-black hover:text-white fade-in-up group" onclick="toggleDetails('rule4')">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-hand text-2xl font-bold flex items-center">
+                        <span class="text-3xl mr-3">4.</span> La Regla de la Paciencia
+                    </h3>
+                    <i class="ph ph-caret-down text-2xl group-hover:text-white" id="icon-rule4"></i>
+                </div>
+                <div id="rule4" class="hidden mt-4 border-t-2 border-current pt-4 font-semibold">
+                    El proceso debe ser suave. Cuanto más frágil o comprometida se encuentre la salud de la persona, más lento y escalonado debe ser el aumento en las cantidades utilizadas.
+                </div>
+            </div>
+
+            <!-- Regla 5 -->
+            <div class="sketch-box p-6 cursor-pointer hover:bg-black hover:text-white fade-in-up group" onclick="toggleDetails('rule5')">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-hand text-2xl font-bold flex items-center">
+                        <span class="text-3xl mr-3">5.</span> Comprender los Síntomas
+                    </h3>
+                    <i class="ph ph-caret-down text-2xl group-hover:text-white" id="icon-rule5"></i>
+                </div>
+                <div id="rule5" class="hidden mt-4 border-t-2 border-current pt-4 font-semibold">
+                    Al iniciar, es normal experimentar síntomas parecidos a un resfriado leve. Esto es un signo positivo de limpieza: tu organismo está movilizando y expulsando mucosidad y gérmenes antiguos atrapados en vías respiratorias.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modulo 6: Testimonios Reales -->
+    <section class="max-w-5xl mx-auto px-6 mb-20">
+        <h2 class="font-hand text-5xl font-bold text-center mb-10 fade-in-up">Testimonios de Éxito</h2>
+        
+        <h3 class="font-hand text-3xl font-bold mb-6 border-b-4 border-black pb-2 inline-block fade-in-up">Casos de Cáncer tratados con CDS</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+            <!-- Testimonio 1 -->
+            <a href="https://odysee.com/@CDSColombia:9/cancer-de-ovario-con-metastasis:b" target="_blank" class="sketch-box p-4 flex items-center hover:bg-black hover:text-white group transition-colors fade-in-up">
+                <i class="ph ph-play-circle text-4xl mr-4"></i>
+                <p class="font-bold text-lg text-left">Cáncer de ovario avanzado con metástasis</p>
+            </a>
+            
+            <!-- Testimonio 2 -->
+            <a href="https://odysee.com/@CDSColombia:9/claudiotestimoniocds:b" target="_blank" class="sketch-box p-4 flex items-center hover:bg-black hover:text-white group transition-colors fade-in-up" style="transition-delay: 100ms;">
+                <i class="ph ph-play-circle text-4xl mr-4"></i>
+                <p class="font-bold text-lg text-left">Cáncer de vejiga y cálculo renal</p>
+            </a>
+
+            <!-- Testimonio 3 -->
+            <a href="https://odysee.com/@CDSColombia:9/testimoniodelourdes:4" target="_blank" class="sketch-box p-4 flex items-center hover:bg-black hover:text-white group transition-colors fade-in-up">
+                <i class="ph ph-play-circle text-4xl mr-4"></i>
+                <p class="font-bold text-lg text-left">Cáncer de nariz, testimonio de Lourdes</p>
+            </a>
+
+            <!-- Testimonio 4 -->
+            <a href="https://odysee.com/@CDSColombia:9/andreavalera:7" target="_blank" class="sketch-box p-4 flex items-center hover:bg-black hover:text-white group transition-colors fade-in-up" style="transition-delay: 100ms;">
+                <i class="ph ph-play-circle text-4xl mr-4"></i>
+                <p class="font-bold text-lg text-left">Cáncer de ovario etapa 4 en paciente de 19 años, Andrea Valera</p>
+            </a>
+
+            <!-- Testimonio 5 -->
+            <a href="https://odysee.com/@CDSColombia:9/testimoniocancerdepiel:1" target="_blank" class="sketch-box p-4 flex items-center hover:bg-black hover:text-white group transition-colors fade-in-up">
+                <i class="ph ph-play-circle text-4xl mr-4"></i>
+                <p class="font-bold text-lg text-left">Cáncer de piel en paciente de 60 años</p>
+            </a>
+
+            <!-- Testimonio 6 -->
+            <a href="https://odysee.com/@CDSColombia:9/regeneracioncelular:1" target="_blank" class="sketch-box p-4 flex items-center hover:bg-black hover:text-white group transition-colors fade-in-up" style="transition-delay: 100ms;">
+                <i class="ph ph-play-circle text-4xl mr-4"></i>
+                <p class="font-bold text-lg text-left">Regeneración Celular y Cáncer, Dr. Efrén Cabrera Rivera, dile adiós a la quimioterapia y radioterapia</p>
+            </a>
+        </div>
+
+        <!-- Banner de otros testimonios -->
+        <div class="sketch-box p-8 text-center transform -rotate-1 fade-in-up bg-black text-white hover:bg-white hover:text-black transition-colors group">
+            <h3 class="font-hand text-3xl font-bold mb-4">¿Buscas testimonios de otras condiciones?</h3>
+            <p class="font-semibold text-lg mb-6">Si quieres ver más testimonios en casos de diabetes, hipertensión, lupus, ELA y otros, debes dirigirte a nuestro canal completo.</p>
+            <a href="https://odysee.com/@CDSColombia" target="_blank" class="inline-block border-4 border-current px-6 py-3 font-hand text-2xl font-bold uppercase tracking-wider group-hover:bg-black group-hover:text-white transition-colors">
+                Ir al Canal @CDSColombia
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer class="max-w-4xl mx-auto px-6 text-center mt-20 pt-10 border-t-4 border-black fade-in-up">
+        <h2 class="font-hand text-4xl font-bold mb-6">¿Necesitas asesoría o acompañamiento?</h2>
+        
+        <div class="flex justify-center mb-12">
+            <a href="https://walink.co/9be3cb" target="_blank" rel="noopener noreferrer" class="sketch-box px-8 py-4 font-hand text-2xl hover:bg-black hover:text-white flex items-center justify-center transition-colors font-bold">
+                <i class="ph ph-whatsapp-logo text-3xl mr-2"></i> Contactar Asesoría
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script para interactividad básica -->
+    <script>
+        // Funcionalidad para las Reglas de Oro 
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+            
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+                icon.classList.remove('ph-caret-down');
+                icon.classList.add('ph-caret-up');
+            } else {
+                element.classList.add('hidden');
+                icon.classList.remove('ph-caret-up');
+                icon.classList.add('ph-caret-down');
+            }
+        }
+
+        // Animaciones al hacer scroll 
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-in-up');
+            fadeElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
